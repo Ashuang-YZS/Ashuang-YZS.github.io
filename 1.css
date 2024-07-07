@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg,#2c3e50,#27ae60,
+    #2980b9,¡õ#e74c3c,¡õ#8e44ad);
+    background-size: 500%;
+}
+.text{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
