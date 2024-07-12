@@ -1,16 +1,59 @@
 body {
+    /* 初始化 取消内外边距 */
     margin: 0;
     padding: 0;
+    /* 100%窗口高度 */
     height: 100vh;
+    /* 弹性布局 水平垂直居中 */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(125deg,#2c3e50,#27ae60,
-    #2980b9,□#e74c3c,□#8e44ad);
+    /* 渐变背景 */
+    background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    /* 指定背景图像的大小 */
     background-size: 500%;
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: bgAnimation 30s linear infinite;
 }
-.text{
-    color: #fff;
-    font-size: 30px;
+
+.text {
+    color: #E5E5E5;
+    font-size: 3vw;
+    /* 字间距 */
     letter-spacing: 15px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    border: 3px solid #E5E5E5;
+    color: #E5E5E5; /* 文字颜色 */
+    padding: 2vw 3vw; /* 内边距 */
+    border-radius: 500px;
+    text-align: center; /* 文字居中 */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3vw; /* 字体大小 */
+    margin: 4px 2px;
+    cursor: pointer; /* 鼠标光标变为点击手势 */
+}
+
+    .button:hover {
+        background-color: #E5E5E5; /* 鼠标悬浮时的按钮颜色 */
+        color: #000000; /* 文字颜色 */
+    }
+
+/* 定义动画 */
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
