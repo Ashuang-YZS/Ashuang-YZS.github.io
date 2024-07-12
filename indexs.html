@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="yigfaico.ico" type="image/x-icon">
-    <title>YiGFA官网</title>
+    <title>YiGFA(官网欢迎页)</title>
+    <link rel="stylesheet" href="indexs.css">
+    <script>
+        window.onload = function () {
+            // 监听窗口尺寸变化事件
+            window.addEventListener('resize', function () {
+                // 当窗口尺寸变化时，刷新页面
+                location.reload();
+            });
+        };
+    </script>
     <style>
-        body {
-            background-color: #FFC300;
-        }
-
         .yigfalogo {
-            width: 197px; /* 设置图片宽度 */
-            height: auto; /* 高度自动调整以保持图片的宽高比 */
-            position: relative; /* 设置相对定位 */
-            left: 5px; /* 向右移动50px */
-            top: 5px; /* 向下移动20px */
-        }
-
-        .yigfa {
-            width: 509px; /* 设置图片宽度 */
-            height: auto; /* 高度自动调整以保持图片的宽高比 */
-            position: relative; /* 设置相对定位 */
-            float: right;
-            top: 5px; /* 向下移动20px */
-        }
-
-        hr {
-            border-color: #000000; /* 设置HR的颜色为红色 */
-            border-width: 2px; /* 设置边框宽度，以使颜色更加明显 */
-        }
-
-        .dy {
-            width: 104px; /* 设置图片宽度 */
-            height: auto; /* 高度自动调整以保持图片的宽高比 */
-            position: relative; /* 设置相对定位 */
-            left: 50px; /* 向右移动50px */
-            top: -100px; /* 向下移动20px */
-        }
-
-        .hmd {
-            width: 104px; /* 设置图片宽度 */
-            height: auto; /* 高度自动调整以保持图片的宽高比 */
-            position: relative; /* 设置相对定位 */
-            left: 60px; /* 向右移动50px */
-            top: -100px; /* 向下移动20px */
+            width: 25vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <img src="yigfalogo.png" alt="no" class="yigfalogo">
-    <img src="yigfa.png" alt="no" class="yigfa">
-    <p style="color: blue; font-size: 40px; position: relative; top: 0px; left: 0px;"></p>
-    <hr>
-    <p style="font-size: 60px; color: #808080; position: relative; top: -300px; left: 250px; ">欢迎加入YiGFA</p>
-    <p style="color: #000000; font-size: 20px; position: relative; top: -160px; left: 15px;">YiGFA工作室,一个云南的独立游戏工作室.自2022年2月创建以来专注游戏开发;电子电路;软件开发;手机维修;YiGFA的首席执行官-YZS于2009年出生于云南腾冲,目前抖音平台(YiGFA唯一视频平台)粉丝量达2.7万,YiGFA工作室目前正在进行一系列游戏项目开发，预计上架steam平台</p>
-    <a href="https://www.douyin.com/user/MS4wLjABAAAAZxDXbwbpCFCsNL4Os4l8WKYbhlJVoBFHSwtWVybq5R0" target="_blank">
-        <img src="douyin.png" alt="no" class="dy">
-    </a>
-    <a href="hmd.html" target="_blank">
-        <img src="hmd.png" alt="no" class="hmd">
-    </a>
+    <canvas id="my_canvas"></canvas>
+    <img src="yigfalogo.png" alt="Logo not found" class="yigfalogo">
+    <script src="particle.min.js"></script>
+    <script>
+        particle.init('my_canvas');
+    </script>
 </body>
 </html>
