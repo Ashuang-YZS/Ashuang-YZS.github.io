@@ -12,11 +12,4 @@ canvas {
     width: 100%;
 }
 
-.yigfalogo {
-    width: 197px; /* 设置图片宽度 */
-    height: auto; /* 高度自动调整以保持图片的宽高比 */
-    position: absolute;
-    left: 5px; /* 向右移动50px */
-    top: 5px; /* 向下移动20px */
-}
 

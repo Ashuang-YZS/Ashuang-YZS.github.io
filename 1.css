@@ -41,6 +41,7 @@ body {
     .button:hover {
         background-color: #E5E5E5; /* 鼠标悬浮时的按钮颜色 */
         color: #000000; /* 文字颜色 */
+
     }
 
 /* 定义动画 */
