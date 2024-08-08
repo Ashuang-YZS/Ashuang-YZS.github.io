@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Unity WebGL Player | 重生之-我是咪咪</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* 防止滚动条出现 */
+    }
+    #unity-canvas {
+      display: block; /* 防止 canvas 上下文的边距 */
+      width: 100vw; /* 使 canvas 宽度填充视口宽度 */
+      height: 100vh; /* 使 canvas 高度填充视口高度 */
+      background: #000000; /* 背景色 */
+    }
+  </style>
+</head>
+<body>
+  <canvas id="unity-canvas" width="960" height="600"></canvas>
+  <script src="https://Ashuang-YZS.github.io/WEBGL.loader.js"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "https://Ashuang-YZS.github.io/WEBGL.data.br",
+      frameworkUrl: "https://Ashuang-YZS.github.io/WEBGL.framework.js.br",
+      codeUrl: "https://Ashuang-YZS.github.io/WEBGL.wasm.br",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "YiGFA LLC",
+      productName: "重生之-我是咪咪",
+      productVersion: "1.0",
+      devicePixelRatio: window.devicePixelRatio, // 自动适配设备像素比
+    });
+  </script>
+</body>
+</html>
