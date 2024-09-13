@@ -5,7 +5,7 @@ body{
     position: fixed;
     left: 0rem;
     top: 0rem;
-    width: 100rem;
+    width: 100vw;
     height: 4rem;
     background-color: black;
 }
@@ -20,5 +20,5 @@ body{
     top: 0rem;
     left: 4rem;
     color: #e5e5e5;
-    
+    border: none;
 }
