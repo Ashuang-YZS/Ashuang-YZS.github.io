@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YiGFA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./yigfaico.ico" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted class="yigfa">  
+        <source src="https://v2.kwaicdn.com/ksc2/Ej0leOpGbNMf5m2Nxlg6zPcKNhN6WyNHxXMJMKcEf7UP0Kgh5kEeg33kREz4MpVjQXzaumkY_1xpG9slZ2-wM6RQhrm1k6qg2la8YTQfQknbvwADNsfsMZ95AbASKuHEtZufPmBEWtpZVLqTBXMqgNRMbwdskshrr4uDz8exLggyHkUe7S4lh0xUHWqhRom4.mp4?pkey=AAVu_vbSKfn7lloomC8Ywudy8GFA7MV7pGi7vWV92GS7qIeM96otzCRS2dc_Okb4HkwGo_4RM1Zav4_-8FeKKf_tD6HRrGUrTFfeTNaa-R5VxOWG_UBfPLXQCptJ7fzVEC8&tag=1-1726206845-unknown-0-bokvbwn3cm-c2ad9a8f5e08f541&clientCacheKey=3xbyhkyx3rqxkcu_b.mp4&di=b6f77dd8&bp=14734&tt=b&ss=vp" type="video/mp4">   
+    </video>
+
+    <script>    
+        var videos = document.getElementsByClassName("yigfa");  
+        if (videos.length > 0) {  
+            var video = videos[0];  
+            video.addEventListener('ended', function() {    
+                window.location.href = './yigfa.html';    
+            });    
+        }  
+    </script>
+</body>
+</html>
