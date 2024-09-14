@@ -5,22 +5,22 @@ body{
     position: fixed;
     left: 0rem;
     top: 0rem;
-    width: 100rem;
-    height: 4rem;
+    width: 100vw;
+    height: 2rem;
     background-color: black;
 }
 .logo{
     position: fixed;
-    top: 0.4rem;
-    left: 0.4rem;
-    width: 3.3rem;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 1.6rem;
     border-radius: 500rem;
 }
 .yigfatext{
     font-family: 'Pingfang';
     position: fixed;
-    top: 0.8rem;
-    left: 4rem;
+    top: 0.3rem;
+    left: 2rem;
     color: #e5e5e5;
     margin: 0rem;
 }
@@ -30,4 +30,14 @@ body{
 }
 h1{
     font-family: 'Pingfang';
+}
+.stoplan{
+    position: relative;
+    background-color: aqua;
+    width: 100vw;
+    height: 3rem;
+    bottom: 0rem;
+}
+.jsy{
+    text-align: center;
 }
