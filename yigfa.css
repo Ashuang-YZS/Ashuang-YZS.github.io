@@ -19,6 +19,7 @@ body{
 .yigfatext{
     font-family: 'Pingfang';
     position: fixed;
+    font-size: 1rem;
     top: 0.3rem;
     left: 2rem;
     color: #e5e5e5;
