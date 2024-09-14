@@ -12,17 +12,22 @@ body{
 .logo{
     position: fixed;
     top: 0.4rem;
+    left: 0.4rem;
     width: 3.3rem;
     border-radius: 500rem;
 }
 .yigfatext{
-    font-family: './msyhbd.ttc';
+    font-family: 'Pingfang';
     position: fixed;
     top: 0.8rem;
     left: 4rem;
     color: #e5e5e5;
     margin: 0rem;
 }
+@font-face{
+    font-family: 'Pingfang' ;
+    src: url(./msyh.ttc);
+}
 h1{
-    font-family: './msyhbd.ttc';
+    font-family: 'Pingfang';
 }
