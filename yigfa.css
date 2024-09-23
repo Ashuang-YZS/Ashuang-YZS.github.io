@@ -29,16 +29,66 @@ body{
     font-family: 'Pingfang' ;
     src: url(./msyh.ttc);
 }
-h1{
-    font-family: 'Pingfang';
+@font-face{
+    font-family: 'PingfangXI' ;
+    src: url(./msyhl.ttc);
 }
-.stoplan{
+.main{
     position: relative;
-    background-color: aqua;
     width: 100vw;
-    height: 3rem;
-    bottom: 0rem;
+    height: 100vh;
+    top: 2rem;
 }
+
 .jsy{
     text-align: center;
+    font-family: 'PingfangXI';
+}
+p{
+    font-family: 'Pingfang';
+}
+.wz1{
+    font-family: 'Pingfang';
+    position: fixed;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 7rem;
+    color: #e5e5e5;
+    margin: 0rem;
+}
+.wz2{
+    font-family: 'Pingfang';
+    position: fixed;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 10rem;
+    color: #e5e5e5;
+    margin: 0rem;
+}
+.wz3{
+    font-family: 'Pingfang';
+    position: fixed;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 13rem;
+    color: #e5e5e5;
+    margin: 0rem;
+}
+.wz4{
+    font-family: 'Pingfang';
+    position: fixed;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 16rem;
+    color: #e5e5e5;
+    margin: 0rem;
+}
+.wz5{
+    font-family: 'Pingfang';
+    position: fixed;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 19rem;
+    color: #e5e5e5;
+    margin: 0rem;
 }
