@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>搜索器</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            height: 100vh;  
+            margin: 0;  
+            background-color: #f0f0f0;  
+        }  
+        .container {  
+            text-align: center;  
+            background-color: #fff;  
+            padding: 20px;  
+            border-radius: 10px;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        }  
+        input[type="text"] {  
+            width: 80%;  
+            padding: 10px;  
+            margin-bottom: 10px;  
+            border: 1px solid #ccc;  
+            border-radius: 5px;  
+        }  
+        button {  
+            padding: 10px 20px;  
+            background-color: #007BFF;  
+            color: #fff;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+        }  
+        button:hover {  
+            background-color: #0056b3;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <input type="text" id="inputBox" placeholder="输入搜索内容">  
+        <br>
+        <br>
+        <button onclick="openby()">在必应搜索</button> 
+        <button onclick="opengg()">在谷歌搜索</button> 
+        <br>
+        <br>
+        <button onclick="openbd()">在百度搜索</button>
+        <button onclick="openyg()">在油管搜索</button> 
+        <br>
+        <br>
+        <button onclick="opendy()">在抖音搜索</button>
+        <button onclick="openks()">在快手搜索</button> 
+        <br>
+        <br>
+        <button onclick="openblbl()">在哔哩哔哩搜索</button> 
+    </div>  
+  
+    <script>  
+        function openby() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://cn.bing.com/search?q=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function opengg() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://www.google.com/search?q=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function openbd() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://www.baidu.com/s?wd=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function openyg() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://www.youtube.com/results?search_query=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function opendy() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://www.douyin.com/search/${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function openks() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://www.kuaishou.com/search/video?searchKey=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+        function openblbl() {  
+            const inputBox = document.getElementById('inputBox');  
+            const inputValue = inputBox.value;  
+            const fullUrl = `https://search.bilibili.com/all?keyword=${inputValue}`;  
+            window.open(fullUrl, '_blank');  
+        }  
+    </script>  
+</body>  
+</html>
