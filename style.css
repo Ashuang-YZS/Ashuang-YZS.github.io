@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
+    color: #454545;
     background-color: #fff;
     scroll-behavior: smooth;
 }
@@ -42,7 +42,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #999898;
     font-size: 16px;
 }
 
@@ -76,13 +76,18 @@ body {
 }
 
 .about {
-    background-color: #f9f9f9;
+    background-color: #51a8ca;
     text-align: center;
 }
-
+.dowload {
+    background-color: #f0f1f2;
+    text-align: center;
+}
 .services {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .service-card {
@@ -93,7 +98,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.service-card:hover {
+.ervices-card:hover {
     transform: translateY(-10px);
 }
 
@@ -103,4 +108,8 @@ body {
     padding: 50px 0;
     background-color: #222;
     color: #fff;
+}
+.sli1 {
+    color: #4f4e4e;
+    position: absolute;
 }
